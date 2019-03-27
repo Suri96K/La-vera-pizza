@@ -1,0 +1,171 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    
+body,html {font-family: sans-serif; font-size: 20px; height: 100%; margin: 0; background-color: #e8e7e7;}
+    
+.button {background-color: #f4f4f7; padding: 13px 32px; color:#484848; border:none; text-decoration:  none; text-align: center; display:inline-block; border-radius: 6px; cursor:pointer; float:none;margin: 8px 6px;font-style: italic; font-size:17px;}
+
+.nav {margin-left: 110px; font-style: italic;}
+    
+.drop {position: relative; display: inline-block;}
+
+.dropdown {display: none;position: absolute;background-color: #f9f9f9;min-width: 160px;box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);z-index: 1;font-size:14px;}
+
+.dropdown a {color: black;padding: 12px 16px;text-decoration: none;display: block;}
+
+.dropdown a:hover {background-color: #c6c6c6}
+
+.drop:hover .dropdown {display: block;}
+
+.button:hover{background-color: #127cc9; color: white; box-shadow: 0 12px 16px 0 rgba(0,0,0,0.18),0 4px 7px 0 rgba(0,0,0,0.25);}
+    
+#b1 { margin-left: 600px;font-size: 34px; color: #343232;}
+
+.reg {background-color:#98989b; border: 0.6px solid #550000;color: #ffffff;padding: 6px 21px; text-align: center; font-style: italic; font-size:17px;text-decoration: none;display: inline-block; cursor: pointer; float: right;margin: 30px 0px;}
+    
+#re1{border-left: 1px solid #484848;}
+    
+.header{background-image: url("images/head.jpg") ; padding: 240px 32px;}
+.header{padding:15px;}
+    
+#search {margin-left: 555px;  box-sizing: border-box;border: 1px solid #ccc;width: 250px;border-radius: 5px;font-size: 14px;background-image: url("images/search_icon.png");background-position: 10px 40px; background-repeat: no-repeat;padding: 8px 10px ;}
+#search2 {padding: 6px 12px;}
+
+.profile{float:right;margin-right: -380px; border: padding: 20px 10px;} 
+.acc{padding: 4px 12px;background-color: #f4f4f7;color:#484848; border:none; text-decoration:  none; text-align: center; display:inline-block; border-radius: 6px; cursor:pointer; float:none;font-style: italic; font-size:17px; }
+.profile img {height: 12%; width:15%;cursor: pointer;}
+ 
+.reg:hover{background-color:#178430 ; color: aliceblue;}
+
+.cart1 table{width: 85%; margin-left: 150px;}
+.cart3 {font-size: 15px;}   
+.cart4{margin-left: 1150px; padding: 10px;}   
+.shop{padding: 4px 12px;background-color: rgba(240, 27, 43, 0.91);color:#f4f4f7; border:none; text-decoration:  none; text-align: center; display:inline-block; border-radius: 6px; cursor:pointer; float:none;font-style: italic; font-size:17px; }  
+    
+.footer { background-image: url("images/f5.jpg"); color: #e5e0e0;background-position: center; background-repeat: no-repeat; background-size: cover; position: relative;}
+    
+.foot{margin-left: 130px;}   
+.foot img {height: 40%; width: 40%;cursor: pointer;}
+.foot b,p{ font-size: 18px; font-style: italic;}
+#add {margin-left: 80px;}       
+
+</style>    
+    
+</head>
+<body>
+<div class="header"> 
+  
+<br>
+<input type="text" id="search" placeholder="Search here..">
+<button class="button" id="search2"> search</button>
+    
+<div class="profile"> 
+<img src="images/profile.png"> <br>
+<a class="acc" href="myprofile.html">My Account</a>    
+</div>
+
+<br><br><br><br>
+    
+<div class="nav">
+<a class="button" href="home.html">Home</a>
+    
+<div class="drop">
+  <a class="button" id="menu" href="menu.html">Menu</a>
+  <div class="dropdown">
+    <a href="menu.html">Pizzas</a>
+    <a href="menu.html">Pasta & Others </a>
+    <a href="menu.html">Dessert</a>
+    <a href="menu.html">Beverages</a>
+  </div>
+</div>
+  <a class="button">Packages</a>
+  <a class="button">Promos</a>
+  <a class="button">Feedback</a>
+  <a class="button">Careers</a>
+  <a class="button" href="aboutus.html">About Us</a>
+  <a class="button" href="shoppingcart.html">Shopping Cart</a>
+
+<a class="reg" href="login.html"  target="_blank"> login </a>
+<a class="reg" href="register.html"  target="_blank" id="re1">Register</a>
+    
+ <br><br>
+</div>  
+</div>
+<br><br>
+   
+    <h1><center>Your Shopping Cart </center> </h1>
+    
+<div class="cart1">
+    
+<table>
+<tr>
+    <td><img src="images/menu2.jpg" style="width: 320px; height: 240px;" > </td>
+    <td> <p> Receiving the top-maul from<br> Starbuck, he advanced towards the <br>main-mast with the hammer.<br> uplifted in one hand, with the other </p><br>
+        <a href="#" class="cart3">See Later </a>&nbsp;&nbsp; 
+        <a href="#" class="cart3">Remove </a></td>
+    <td> <p> $10.23 </p></td>
+    
+    <td>
+    <h2 style="margin-left: 140px;"> Proceed to checkout </h2>
+    <br>
+    <p style="margin-left: 140px;"> Total : $25.36 </p>
+    <br><br>
+    
+    <a class="shop" style="margin-left: 240px;"> Payments </a>
+    </td>
+    
+</tr>
+        <br><br>
+<tr>
+    <td><img src="images/menu4.jpg" style="width: 320px; height: 240px;" > </td>
+    <td> <p> Receiving the top-maul from<br> Starbuck, he advanced towards the <br>main-mast with the hammer.<br> uplifted in one hand, with the other </p><br>
+    <a href="#" class="cart3">See Later </a>&nbsp;&nbsp; 
+    <a href="#" class="cart3">Remove </a></td>
+    <td> <p> $10.23 </p></td>
+</tr>
+    
+    
+</table>
+    
+</div>
+<br><
+    
+<div class="cart4">
+     <a class="shop" > Continue shopping </a>
+     <a class="shop"> Proceed </a>
+</div>
+    
+<br><br>
+<div class="footer">
+<div class="foot">
+    
+<br> <br><br>
+<b>..get in touch with us.. </b> <br><br><br>
+    
+<table >
+<tr>
+    <td><img src="images/fb.png"</td>
+    <td><img src="images/tw.png"</td>
+    <td><img src="images/g.png"</td>
+    <td><img src="images/in.png"</td>
+</tr>
+</table>
+    
+ <br><br><br><b>Address:</b> <b id="add">47, blah blah road , Kandy.</b> <br><br>
+    
+    
+<b>Phone number: </b> <b id="add"> +94772225780</b><br><br>
+    
+
+<p> English US | UK <br>
+<br>Copyright @ 2017 Tk's Pizza. All Rights reserved.</p>    
+<br><br>
+    
+</div>    
+</div>
+
+</body>
+</html>

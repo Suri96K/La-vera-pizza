@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    
+body,html {font-family: sans-serif; font-size: 12px; height: 100%; margin: 0; background-color: #e8e7e7;}
+    
+.button {background-color: #f4f4f7; padding: 13px 32px; color:#484848; border:none; text-decoration:  none; text-align: center; display:inline-block; border-radius: 6px; cursor:pointer; float:none;margin: 8px 6px;font-style: italic; font-size:17px;}
+    
+.nav {margin-left: 100px; font-style: italic;}
+    
+.drop {position: relative; display: inline-block;}
+
+.dropdown {display: none;position: absolute;background-color: #f9f9f9;min-width: 160px;box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);z-index: 1;font-size:14px;}
+
+.dropdown a {color: black;padding: 12px 16px;text-decoration: none;display: block;}
+
+.dropdown a:hover {background-color: #c6c6c6}
+
+.drop:hover .dropdown {display: block;}
+
+
+.button:hover{background-color: #127cc9; color: white; box-shadow: 0 12px 16px 0 rgba(0,0,0,0.18),0 4px 7px 0 rgba(0,0,0,0.25);}
+    
+
+.cover {background-image: url("images/cover3b.jpg"); height: 85%; background-position: center; background-repeat: no-repeat; background-size: cover; position: relative;}
+
+.cover-button {text-align:center; position:absolute; top: 52%; left: 30%; transform: translate(-130%, -40%); color: #faf5f5;}
+
+.cover-button button {border: none; outline: 0; display: inline-block; padding: 10px 30px; color: white; background-color: #1a9035; text-align:inherit; font-size: 14px;cursor: pointer;border-radius: 7px; margin-top: 350px;}
+
+.cover-button button:hover {background-color: #195f28;}
+    
+#b1 { margin-left: 600px;font-size: 34px; color: #343232;}
+
+.reg {background-color:#98989b; border: 0.6px solid #550000;color: #ffffff;padding: 5px 21px; text-align: center; font-style: italic; font-size:17px;text-decoration: none;display: inline-block; cursor: pointer; float: right;margin: 30px 15px;}
+
+.reg a {text-decoration: none; color: white;}
+#re1{border-left: 1px solid #484848;}
+    
+.header{background-image: url("images/head.jpg") ; padding: 240px 32px;}
+.header{padding:15px;}
+    
+#search {margin-left: 555px;  box-sizing: border-box;border: 1px solid #ccc;width: 250px;border-radius: 5px;font-size: 14px;background-image: url("images/search_icon.png");background-position: 10px 40px; background-repeat: no-repeat;padding: 8px 10px ;}
+#search2 {padding: 6px 12px;}
+
+.profile{float:right;margin-right: -380px; border: padding: 20px 10px;} 
+.acc{padding: 4px 12px;background-color: #f4f4f7;color:#484848; border:none; text-decoration:  none; text-align: center; display:inline-block; border-radius: 6px; cursor:pointer; float:none;font-style: italic; font-size:17px; }
+.profile img {height: 12%; width:15%;}
+ 
+.reg:hover{background-color:#178430 ; color: aliceblue;}
+    
+.box table {width: 100%;}
+.box td{height: 300px;}
+.box tr,td{padding: 10px; text-align:center; margin-top:inherit;}
+.box img {height: 28%; width:25%;}
+.box b:hover{color: cornflowerblue;}
+.box p{color: #626262}
+    
+.box2 {width: 100%;}
+.box2:hover {box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);}
+.box2 p {color: #4a87f4;}
+.con {padding: 2px 0px;}
+
+.services {margin-left: 100px; width: 55%; border-right: 2px solid #958e8e; }  
+.services p{ text-align: left; font-size: 17px;}
+
+    
+.footer { background-image: url("images/f5.jpg"); color: #e5e0e0;background-position: center; background-repeat: no-repeat; background-size: cover; position: relative;}
+    
+.foot{margin-left: 130px;}   
+.foot img {height: 40%; width: 40%;cursor: pointer;}
+.foot b,p{ font-size: 18px; font-style: italic;}
+#add {margin-left: 80px;}    
+
+</style>
+</head>
+<body>
+<div class="header"> 
+  
+<br>
+<input type="text" id="search" placeholder="Search here..">
+<button class="button" id="search2"> search</button>
+    
+<div class="profile"> 
+<img src="images/profile.png"> <br>
+<a class="acc" href="myprofile.html">My Account</a>    
+</div>
+
+<br><br><br><br>
+    
+<div class="nav">
+<a class="button" href="home.html">Home</a>
+    
+<div class="drop">
+  <a class="button" id="menu" href="menu.html">Menu</a>
+  <div class="dropdown">
+    <a href="menu.html">Pizzas</a>
+    <a href="menu.html">Pasta & Others </a>
+    <a href="menu.html">Dessert</a>
+    <a href="menu.html">Beverages</a>
+  </div>
+</div>
+  <a class="button">Packages</a>
+  <a class="button">Promos</a>
+  <a class="button">Feedback</a>
+  <a class="button">Careers</a>
+  <a class="button" href="aboutus.html">About Us</a>
+  <a class="button" href="shoppingcart.html">Shopping Cart</a>
+
+<a class="reg" href="login.html"  target="_blank"> login </a>
+<a class="reg" href="register.html"  target="_blank" id="re1">Register</a>
+ 
+<br><br><br><br><br>
+</div>  
+</div>
+
+<br>
+
+<div class="cover">
+  <div class="cover-button">
+    <button>Learn more >></button>
+  </div>
+</div>
+
+<br><br><br><br><br>
+
+<hr style="width:80%"> <br><br>   
+<b id="b1"> What we do</b> <br><br>
+<b id = "b1">story about us..</b> <br><br>
+    
+
+<hr style="width:80%">
+    
+<br><br>
+
+<div class=box>
+<table>
+<tr>
+<td><img src="images/1.png"><br><br>
+    <b style="font-size:20px; color: #434040"> Variety of products </b><br>
+    <p> Receiving the top-maul from<br> Starbuck, he advanced towards the <br>main-mast with the hammer.<br> uplifted in one hand, with the other </p></td>
+<td><img src="images/2.png"><br><br>
+    <b style="font-size:20px; color: #434040"> Fresh food </b><br>
+    <p> Receiving the top-maul from<br> Starbuck, he advanced towards the <br>main-mast with the hammer.<br> uplifted in one hand, with the other </p></td>
+<td><img src="images/3.png"><br><br>
+    <b style="font-size:20px; color: #434040"> Cheap prices </b><br>
+    <p> Receiving the top-maul from<br> Starbuck, he advanced towards the <br>main-mast with the hammer.<br> uplifted in one hand, with the other </p></td>
+<td><img src="images/4.png"><br><br>
+    <b style="font-size:20px; color: #434040"> Quick service </b><br>
+    <p> Receiving the top-maul from<br> Starbuck, he advanced towards the <br>main-mast with the hammer.<br> uplifted in one hand, with the other </p></td>
+</tr>
+</table>
+</div>   
+    
+<br><br>
+    
+<table>
+<tr>
+<td><div class="box2">
+  <img src="images/burger2.jpg" style="width: 100%; height: 300px; width: 480px;" >
+  <div class="con">
+  <p>You will Enjoy Your meal </p> 
+  </div>
+</div></td> 
+
+<td><div class="box2">
+  <img src="images/card2.jpg" style="width: 100%; height: 300px; width: 480px;" >
+  <div class="con">
+    <p>We offer you the best meal</p> 
+  </div>
+</div></td>
+
+<td><div class="box2">
+    <img src="images/card3.jpg" style="width: 100%;height: 300px; width: 480px;" >
+    <div class="con">
+    <p>Variety of pizzas for your choice</p> 
+  </div>
+</div></td>
+</tr>
+</table>
+<br><br><br>
+        
+<h1 style="margin-left: 100px;"> -Our Services- </h1>
+    
+<div class="services">
+    
+<div id="range">
+<table>
+<tr>
+<td><p>Range  of products</p> <br>
+<img src="images/pizza5.jpg" style="width: 100%;height: 250px; width: 420px;" ></td>
+    <td> <p>With new restaurants being added daily, you’ll not only find favourites such as Indian, Chinese, and Pizza, but also discover unique new dishes. Track down top-ranking restaurants in your area by simply popping in your postcode (here’s the test: is it Leeds or Bradford?) and let us take care of the rest! All you have to do? Love takeaway. </p></td>
+    
+</div>  
+<div id="Del">
+<tr><br>
+<td><br><p>Delivery</p> <br>
+    <img src="images/pizza1.jpg" style="width: 100%;height: 250px; width: 420px;" ></td>
+    <td><p>Forget hunting around for paper menus. On hungryhouse.co.uk, instantly access a wide array of local favourites, whether you’re after Brighton’s best fish & chips or a full English breakfast in Liverpool. Browse peer-reviewed takeaway menus and filter by opening times, accepted payment methods, deals and discounts. </p></td>
+</table>
+</div>
+
+<div id="promo">
+
+
+</div>   
+</div>
+    
+<br> <br><br><br> <br><br>
+   
+<div class="footer">
+<div class="foot">
+    
+<br> <br><br>
+<b>..get in touch with us.. </b> <br><br><br>
+    
+<table >
+<tr>
+    <td><img src="images/fb.png"</td>
+    <td><img src="images/tw.png"</td>
+    <td><img src="images/g.png"</td>
+    <td><img src="images/in.png"</td>
+</tr>
+</table>
+    
+ <br><br><br><b>Address:</b> <b id="add">47, blah blah road , Kandy.</b> <br><br>
+    
+    
+<b>Phone number: </b> <b id="add"> +94772225780</b><br><br>
+    
+
+<p> English US | UK <br>
+<br>Copyright @ 2017 Tk's Pizza. All Rights reserved.</p>    
+<br><br>
+    
+</div>    
+</div>
+</body>
+</html>
